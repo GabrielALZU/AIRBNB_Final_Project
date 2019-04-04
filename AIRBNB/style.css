@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+body {
+	line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+
+nav ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+	background-color:#ff9;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #cccccc;
+	margin:1em 0;
+	padding:0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+nav { 
+    display: inline-block;
+	width: 50%;
+	height:80px; 		 
+	vertical-align: top; 
+   }
+   
+nav ul {		
+	text-align: right;  
+	margin-top: 50px;  
+	 }
+	
+nav li{
+	display:inline-block;
+	width:90px;
+	list-style-type:none;
+	}
+   
+ nav a{
+	display:block;
+	text-decoration:none;
+    font-family: 'PT Sans', sans-serif;
+	font-size:0.80em;
+	font-weight: 600;
+	color:#484848;
+	text-align: center;
+	} 
+
+nav a:hover{
+	color:gray;
+	
+	}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    color:#484848;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    margin:auto;
+}
+
+header .logo{
+    margin-top:12px;
+    height:55px;
+    width:55px;
+}
+
+header img{
+    height:100%;
+    width:100%;
+    display: inline-block;
+}
+
+hr{
+    border:0;
+    height:0.04em;
+    background-color: #DBDBDB;
+    width: 100%;
+}
+
+header .imagen-usuario{
+    border-radius: 50%;
+    height:45px;
+    width:45px;
+    box-shadow: 0px 0px 30px -6px black;
+}
+
+header .imagen-usuario:hover{
+    box-shadow: 0px 0px 30px -6px gray;
+}
+
+header form{
+    display: inline-block;
+    height:80px;         
+    vertical-align: top; 
+    width: 35%;
+    padding-left: 20px;
+    text-align: left;
+}
+
+header input{
+    width: 375px;
+    height: 35px;
+    font-size: 1.25em;
+    color:gray;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 3px;
+    box-shadow: none;
+    border:none;
+    border:0.04em solid #DBDBDB;
+    box-shadow: 8px 8px 5px -6px rgba(177,177,177,0.27);
+    padding:6px 0 6px 30px;
+    margin-top: 15px;
+}
+
+.contanier{width: 100%;}
+.mainbody{
+    flex-wrap: wrap;
+    justify-content: center;
+    display:grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: auto;
+    font-family:'PT Sans', sans-serif;
+    color:484848;
+}
+.describe{                               /*Describe*/
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 2.5%;
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'left main right';
+    
+}
+.capa1{    
+    grid-area: left;
+    flex-wrap: wrap;
+    width: 310px;
+    height: 70px;
+    align-content: center;
+    border: 1px solid #DBDBDB;
+}
+.capa1 img{
+    height: 100%;
+    width: 100px;
+    display:inline-block;
+}
+.capa2{
+    grid-area: main;
+    width: 310px;
+    height: 70px;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+}
+.capa2 img{
+    
+    height: 100%;
+    width: 100px;
+    display:inline-block;
+}
+.capa3{
+    grid-area: right;
+    width: 310px;
+    height: 70px;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+}
+.capa3 img{
+    height: 100%;
+    width: 100px;
+    display:inline-block;
+}
+.describe h3{
+    font-weight: bold;
+    display:inline-block;
+    vertical-align: top;
+    margin:25px 0px 0px 10px;
+}
+.capa1:hover {
+    box-shadow: -8px -8px 5px -6px rgba(177,177,177,0.27);
+
+}
+.capa2:hover {
+    box-shadow: -8px -8px 5px -6px rgba(177,177,177,0.27);
+
+}
+.capa3:hover {
+    box-shadow: -8px -8px 5px -6px rgba(177,177,177,0.27);
+
+}                                          /*Fin Describe*/
+
+.visor{                                    /*Visor*/
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border-radius: 7px;
+    background-size: 100% 300px;
+    background-image:url(http://lm.fpribera.es/lm02/eval02/Tasks2/AirbnbRibera/./imagenes/visor_index.jpg);
+}
+.degradado{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0.6), rgba(5, 110, 215,0.4));
+}
+.visor h4{
+    color:black;
+    width: 450px;
+    font-size:1.25em;
+    padding:80px 0 0 50px;
+    position:relative;
+    margin-top: 15px;
+    
+}
+.visor button{
+    padding: 10px 40px;
+    font-size: 0.95em;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin: 20px 10px 0 50px;
+    position:relative;
+    font-weight: bold;
+}
+.visor button:hover{
+    cursor: pointer;
+    background: white;
+}                                       /*Fin Visor*/
+
+
+.alojamientos{                          /*Alojamientos*/
+    text-align:center; 
+}
+.caja-alojamiento {
+    display:inline-block;
+    margin: 0 10px 20px 0;
+    text-align: left;
+    width: 270px;
+}
+.caja-alojamiento h5{
+    font-family: 'arial narrow';
+    letter-spacing: 0.02em;
+    font-size: 0.85em;
+    margin:3px 0;
+}
+
+.caja-alojamiento h3{
+    font-weight: bold;
+    font-family: 'arial narrow';
+}
+.caja-alojamiento .precio{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1em;
+}
+.caja-alojamiento img{
+    margin-top:20px;
+    width: 100%;
+    height: 180px;
+    border-radius: 3px;
+    box-shadow: 8px 8px 5px -6px rgba(177,177,177,0.27);
+}
+.caja-alojamiento img:hover{
+    box-shadow: -8px -8px 5px -6px rgba(177,177,177,0.27);
+}                                          /*Fin Alojaminetos*/
+
+
+footer .columnas{
+   text-align: center;
+   width: 70%;
+   margin: 30px auto;
+}
+footer .columna{
+    width:15%;
+    max-width: 300px;
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    text-align:left;
+    font-family: 'PT Sans', sans-serif; 
+}
+footer h4{
+    padding-bottom: 15px;
+    color:rgb(118,118,118);
+}
+footer a{
+    font-family: arial narrow;
+}
+footer a:hover{
+    text-decoration: underline;
+}
